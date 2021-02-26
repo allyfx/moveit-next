@@ -6,9 +6,7 @@ import { ThemeProvider } from '../contexts/ThemeContext';
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <ChallengesProvider>
-        <Component {...pageProps} />
-      </ChallengesProvider>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
